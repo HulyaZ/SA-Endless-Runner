@@ -1,4 +1,4 @@
-# Endless_Runner
+# Winter Jungle / Endless_Runner
 Play here: https://hulya.itch.io/winter-jungle
 
  
