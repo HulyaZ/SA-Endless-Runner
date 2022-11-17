@@ -64,7 +64,7 @@ public class Pooler : MonoBehaviour
         GameObject objectToSpawn = poolDictionary[ID].Dequeue();
         objectToSpawn.SetActive(true);
 
-        objectToSpawn.transform.position = parentPos.transform.position + randomPosition();
+        objectToSpawn.transform.position = randomPosition();
         objectToSpawn.transform.rotation = rotation;
         CheckForCollision(objectToSpawn);
 
@@ -90,7 +90,7 @@ public class Pooler : MonoBehaviour
     Vector3 randomPos;
     public Vector3 randomPosition()
     {
-        randomPos = new Vector3(xBound[Random.Range(0, xBound.Length)], yBound[Random.Range(0, yBound.Length)], Random.Range(0, 80f));
+        randomPos = new Vector3(xBound[Random.Range(0, xBound.Length)], yBound[Random.Range(0, yBound.Length)], Random.Range(5,180f));
         return randomPos;
     }
 }
